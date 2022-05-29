@@ -22,6 +22,12 @@ public class StudentsController {
         return "ok";
     }
 
+    @GetMapping("/selbyid")
+    public String selById(){
+        studentsService.selectById(101);
+        return "ok";
+    }
+
 
     @GetMapping("/selectbylike")
     public String selectByLike(){

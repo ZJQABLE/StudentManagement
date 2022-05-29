@@ -11,6 +11,8 @@ public interface IStudentsService {
     //查询所有学生列表
     List<Students> selectAllStuList();
 
+    //按id查询
+    void selectById(Integer sid);
 
     //模糊查询学生信息
     void selectStuByLike(String likeStr);

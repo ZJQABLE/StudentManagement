@@ -28,6 +28,11 @@ public class StudentsServiceImpl implements IStudentsService {
     }
 
     @Override
+    public void selectById(Integer sid) {
+        studentsMapper.selectById(sid);
+    }
+
+    @Override
     public void selectStuByLike(String likeStr) {
         List<Students> studentsAll = studentsMapper.selectList(null);
         int sizeAll = studentsAll.size();
